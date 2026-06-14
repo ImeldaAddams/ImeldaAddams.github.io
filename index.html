@@ -3,74 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Imelda Mwaura — portfolio showcasing web, mobile and systems projects focusing on security and scalable architectures.">
     <title>Imelda Mwaura | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome Developer Icons -->
+    <!-- FontAwesome & Google Fonts for Cute Accents -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <a class="skip-link" href="#main">Skip to content</a>
-
     <!-- Top Navigation Bar -->
     <header>
-        <div class="brand">
-            <div class="logo" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
-            <a href="#home" class="brand-name">Imelda Mwaura</a>
-        </div>
-        <button id="navToggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa-solid fa-bars" aria-hidden="true"></span>
-        </button>
-        <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main navigation">
-            <ul>
-                <li><a href="#home" class="active" aria-current="page">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo">🎀 <span class="logo-text">Imelda</span></div>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- Main Hero Landing Display -->
-    <main id="main">
-    <section id="home" class="hero" aria-labelledby="home-heading">
+    <section id="home" class="hero">
         <div class="hero-text">
-            <h3 id="home-heading" class="hello">HELLO, I'M</h3>
+            <h3 class="hello">🎀 HELLO, I'M</h3>
             <h1 class="name">Imelda <span class="gradient-text">Mwaura</span></h1>
-            <h2>An <span class="typing-text" data-phrases='["Information Technology Student","Web Developer","Mobile Developer","Systems Enthusiast"]'>Information Technology Student</span></h2>
-            <p class="subtext">Building secure, data-driven web applications and scalable mobile infrastructure.</p>
+            <h2>I am <span class="typing-text"></span></h2>
+            <p class="subtext">Building secure, data-driven web applications and scalable mobile infrastructure with love and clean code.</p>
             
             <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="mailto:imeldamwaura592@gmail.com" class="btn secondary">Get In Touch <i class="fa-solid fa-paper-plane"></i></a>
+                <a href="#projects" class="btn primary">View My Work <i class="fa-solid fa-heart"></i></a>
+                <a href="mailto:imeldamwaura592@gmail.com" class="btn secondary">Get In Touch <i class="fa-solid fa-envelope"></i></a>
             </div>
 
             <!-- Footer Social Communication Tray -->
-            <div class="social-icons" aria-label="Social links">
-                <a href="mailto:imeldamwaura592@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a>
-                <a href="https://www.linkedin.com/in/imelda-mwaura-9748a9319" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
-                <a href="https://github.com/ImeldaAddams" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">GitHub</span></a>
+            <div class="social-icons">
+                <a href="mailto:imeldamwaura592@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/imelda-mwaura-9748a9319" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/ImeldaAddams" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
 
-        <!-- Floating Geometric Node Grid Layout (Matches image_c51337.jpg) -->
+        <!-- Floating Pastel Node Grid Layout -->
         <div class="hero-graphics">
             <div class="node-grid">
-                <div class="node active-node" title="Databases"><i class="fa-solid fa-database"></i></div>
-                <div class="node" title="Clean Code"><i class="fa-solid fa-code"></i></div>
-                <div class="node" title="Mobile Architecture"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                <div class="node" title="System Security"><i class="fa-solid fa-lock"></i></div>
-                <div class="node" title="Terminal Environments"><i class="fa-solid fa-terminal"></i></div>
-                <div class="node" title="Computer Graphics"><i class="fa-solid fa-bezier-curve"></i></div>
+                <div class="node active-node" title="Databases">🎀<i class="fa-solid fa-database"></i></div>
+                <div class="node" title="Clean Code">🎀<i class="fa-solid fa-code"></i></div>
+                <div class="node" title="Mobile Architecture">🎀<i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="node" title="System Security">🎀<i class="fa-solid fa-lock"></i></div>
+                <div class="node" title="Terminal Environments">🎀<i class="fa-solid fa-terminal"></i></div>
+                <div class="node" title="Computer Graphics">🎀<i class="fa-solid fa-bezier-curve"></i></div>
             </div>
         </div>
     </section>
 
     <!-- Dynamic Systems Content Blocks -->
-    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
-        <h2 id="projects-heading" class="section-title">High-Impact <span class="gradient-text">Projects</span></h2>
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">🎀 High-Impact <span class="gradient-text">Projects</span> 🎀</h2>
         <div class="projects-grid">
             
             <!-- Project 1: WEaaS -->
@@ -93,17 +82,6 @@
 
         </div>
     </section>
-
-    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
-        <h2 id="contact-heading" class="section-title">Get In Touch</h2>
-        <p>Prefer email? Send a message to <a href="mailto:imeldamwaura592@gmail.com">imeldamwaura592@gmail.com</a>.</p>
-    </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <p>&copy; <span id="year"></span> Imelda Mwaura — Built with care.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>

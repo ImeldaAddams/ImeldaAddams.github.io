@@ -53,18 +53,21 @@
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click', function(e){
         var target = document.querySelector(this.getAttribute('href'));
-        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); target.focus({preventScroll:true}); }
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
       });
     });
   }
 })();
-// Verification confirmation script
-console.log("IT Infrastructure Portal Dashboard Engine Initialized Successfully.");
 
-// Quick script to add light interaction to the floating nodes
-document.querySelectorAll('.node').forEach(node => {
-    node.addEventListener('click', () => {
-        document.querySelectorAll('.node').forEach(n => n.classList.remove('active-node'));
-        node.classList.add('active-node');
+// Light interaction for floating nodes
+document.querySelectorAll('.node').forEach(function(node){
+  node.addEventListener('click', function(){
+    document.querySelectorAll('.node').forEach(function(n){
+      n.classList.remove('active-node');
     });
+    node.classList.add('active-node');
+  });
 });
