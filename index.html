@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imelda Mwaura | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome & Google Fonts for Cute Accents -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Top Navigation Bar -->
     <header>
         <div class="logo"><span class="strawberry-bow">🎀</span> <span class="logo-text">Imelda</span></div>
         <nav>
@@ -21,15 +23,19 @@
         </nav>
     </header>
 
+    <!-- Main Hero Landing Display (This area houses the falling strawberries) -->
     <section id="home" class="hero">
         <div class="hero-text">
             <h3 class="hello"><span class="strawberry-bow">🎀</span> HELLO, I'M</h3>
             <h1 class="name">Imelda <span class="strawberry-gradient-text">Mwaura</span></h1>
             
-            <!-- THE CORRECTION: The JavaScript will now type perfectly inside this span -->
-            <h2>I am <span class="typing-text"></span></h2>
+            <!-- STABILIZED TYPING CONTAINER CONTAINER -->
+            <div class="typing-container">
+                <h2>I am <span class="typing-text"></span></h2>
+            </div>
             
-            <p class="subtext">Building secure, data-driven web applications and scalable mobile infrastructure with love, clean code, and vibrant strawberry precision.</p>
+            <!-- MERGED BIO TEXT: Professional & High Performance -->
+            <p class="subtext">Building secure, data-driven web applications and scalable mobile infrastructure with love, clean code, and high-performance precision.</p>
             
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View My Work <i class="fa-solid fa-heart"></i></a>
@@ -43,6 +49,7 @@
             </div>
         </div>
 
+        <!-- Floating Pastel Node Grid Layout -->
         <div class="hero-graphics">
             <div class="node-grid">
                 <div class="node active-node" title="Databases"><span class="strawberry-bow">🎀</span><i class="fa-solid fa-database"></i></div>
@@ -55,20 +62,24 @@
         </div>
     </section>
 
+    <!-- Dynamic Systems Content Blocks -->
     <section id="projects" class="projects-section">
         <h2 class="section-title"><span class="strawberry-bow">🎀</span> High-Impact <span class="strawberry-gradient-text">Projects</span> <span class="strawberry-bow">🎀</span></h2>
         <div class="projects-grid">
             
+            <!-- Project 1: WEaaS -->
             <div class="project-card">
                 <h3>Wireless Environment as a Service (WEaaS)</h3>
                 <p>A secure three-tier web application engineered with a native PHP backend and MySQL database layer. Implemented a Virtual Data Acquisition Model simulating real-time telemetry packets from wireless systems to enable robust high-volume database stress-testing. Built with strict PDO prepared statement layers to defend against application vulnerabilities.</p>
             </div>
 
+            <!-- Project 2: Property Management -->
             <div class="project-card">
                 <h3>Property Management Mobile Platform</h3>
                 <p>A cross-platform mobile ecosystem engineered using React Native and the Expo framework. Architected modular flows handling dynamic land catalogs, scheduling utilities for physical site visits, and automated logs tracking payment installments.</p>
             </div>
 
+            <!-- Project 3: Computer Graphics -->
             <div class="project-card">
                 <h3>Computer Graphics & Matrix Visualizations</h3>
                 <p>A portfolio modeling standard rendering pipeline architectures. Features implementations tracking geometric vector transformations, 2D/3D coordinate space mappings, and algorithmic rendering procedures.</p>
@@ -77,7 +88,6 @@
         </div>
     </section>
 
-    <!-- Add 'defer' to ensure it waits for the HTML to render, and check the spelling -->
     <script defer src="script.js"></script>
 </body>
 </html>
