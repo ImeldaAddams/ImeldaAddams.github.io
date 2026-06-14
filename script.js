@@ -1,4 +1,4 @@
-// --- TYPING ENGINE CONFIGURATION ---
+// Array containing core professional identities
 const roles = [
     "an Information Technology Student.",
     "a Web Developer.",
@@ -39,40 +39,7 @@ function typeAnimation() {
     }
 }
 
-// --- DYNAMIC STRAWBERRY RAIN GENERATOR ---
-function createStrawberryRain() {
-    const heroSection = document.getElementById("home");
-    if (!heroSection) return;
-
-    // Create a strawberry element
-    const strawberry = document.createElement("div");
-    strawberry.classList.add("strawberry-drop");
-    strawberry.innerText = "🍓";
-
-    // Randomize horizontal landing points across the screen widths (0% to 100%)
-    strawberry.style.left = Math.random() * 100 + "%";
-
-    // Randomize drop fall speeds so they look natural (between 4 to 8 seconds)
-    const fallDuration = Math.random() * 4 + 4;
-    strawberry.style.animationDuration = fallDuration + "s";
-
-    // Randomize sizes slightly for perspective (between 16px and 32px)
-    const sizeVariations = Math.random() * 16 + 16;
-    strawberry.style.fontSize = sizeVariations + "px";
-
-    // Append into the landing card wrapper
-    heroSection.appendChild(strawberry);
-
-    // Garbage collector: automatically clear elements from memory after they exit the screen
-    setTimeout(() => {
-        strawberry.remove();
-    }, fallDuration * 1000);
-}
-
-// Initialize components when DOM context structures mount
+// Run typing script on load
 document.addEventListener("DOMContentLoaded", () => {
     typeAnimation();
-    
-    // Spawns a fresh cascading strawberry every 400 milliseconds
-    setInterval(createStrawberryRain, 400);
 });
