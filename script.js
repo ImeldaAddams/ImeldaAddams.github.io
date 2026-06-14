@@ -1,30 +1,5 @@
-// Small accessible enhancements: year, nav toggle, typing effect, smooth links
+// Typing animation for hero text
 (function(){
-  // set current year
-  var y = new Date().getFullYear();
-  var yearEl = document.getElementById('year');
-  if(yearEl) yearEl.textContent = y;
-
-  // nav toggle
-  var navToggle = document.getElementById('navToggle');
-  var mainNav = document.getElementById('main-nav');
-  if(navToggle && mainNav){
-    navToggle.addEventListener('click', function(){
-      var open = mainNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    // close nav on link click
-    mainNav.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click', function(){
-        if(mainNav.classList.contains('open')){
-          mainNav.classList.remove('open');
-          navToggle.setAttribute('aria-expanded','false');
-        }
-      });
-    });
-  }
-
-  // typing effect (respects prefers-reduced-motion)
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var typing = document.querySelector('.typing-text');
   if(typing && !prefersReduced){
@@ -47,27 +22,6 @@
     }
     tick();
   }
-
-  // smooth scroll for in-page links when appropriate
-  if('scrollBehavior' in document.documentElement.style && !prefersReduced){
-    document.querySelectorAll('a[href^="#"]').forEach(function(a){
-      a.addEventListener('click', function(e){
-        var target = document.querySelector(this.getAttribute('href'));
-        if(target){
-          e.preventDefault();
-          target.scrollIntoView({behavior:'smooth',block:'start'});
-        }
-      });
-    });
-  }
 })();
 
-// Light interaction for floating nodes
-document.querySelectorAll('.node').forEach(function(node){
-  node.addEventListener('click', function(){
-    document.querySelectorAll('.node').forEach(function(n){
-      n.classList.remove('active-node');
-    });
-    node.classList.add('active-node');
-  });
-});
+console.log("Strawberry Tech Portfolio Infrastructure Active.");
